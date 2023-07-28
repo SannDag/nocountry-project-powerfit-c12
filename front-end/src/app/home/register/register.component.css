@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+h4{
+  font-family: 'Roboto', sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0em;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400px;
+  font-size: 24px;
+  line-height: 28.13px;
+  color: #000000;
+}
+label{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 13px;
+  letter-spacing: 0em;
+
+  color:#000000;
+
+}
+input{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0em;
+}
+.anchoForm{
+  width: 493px;
+  border-radius: 20px;
+  border: 1px #000000;
+}
+button{
+  border-radius: 25.200000762939453px;
+  background: #000000;
+  box-shadow: 0px 4px 10px 0px #00000040;
+  color: #F7FC00;
+}
+
+.button-register:hover {
+  background-color: #00000040; /* Cambia el color de fondo al pasar el mouse */
+  color: #F7FC00; /* Cambia el color del texto al pasar el mouse */
+}
+.disabled-button  {
+  opacity: 0.9; /* Por ejemplo, reduce la opacidad */
+  cursor: not-allowed; /* Cambia el cursor cuando está desactivado */
+  /* Agrega otros estilos personalizados */
+  color: #F7FC00;
+  background-color: grey;
+}
+
+/******Responsive******/
+
+@media (max-width: 575.98px){
+  h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+  p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 550;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+  .anchoForm{
+    width: 308.630126953125px;
+    border-radius: 12.39306354522705px;
+    border: 0.6196531653404236px;
+  }
+  label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0em;
+
+  }
+  input{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .button-register{
+    border-radius: 25.399999618530273px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+
+  }
+
+
+}
+

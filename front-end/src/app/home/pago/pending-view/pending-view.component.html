@@ -1,0 +1,151 @@
+
+<!-- payment-response.component.html -->
+<!-- <div class="container">
+  <div class="row justify-content-center mt-5">
+    <div class="col-md-6">
+      <div class="card" *ngIf="transactionData">
+        <div class="card-body">
+          <h1>Respuesta de Pago</h1>
+          <p>Collection ID: {{ transactionData.collection_id }}</p>
+          <p>Collection Status: {{ transactionData.collection_status }}</p>
+          <p>Payment ID: {{ transactionData.payment_id }}</p>
+          <p>Status: {{ transactionData.status }}</p>
+          <p>External Reference: {{ transactionData.external_reference }}</p>
+          <p>Payment Type: {{ transactionData.payment_type }}</p>
+          <p>Merchant Order ID: {{ transactionData.merchant_order_id }}</p>
+          <p>Preference ID: {{ transactionData.preference_id }}</p>
+          <p>Site ID: {{ transactionData.site_id }}</p>
+          <p>Processing Mode: {{ transactionData.processing_mode }}</p>
+          <p>Merchant Account ID: {{ transactionData.merchant_account_id }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<div class="container continer1  w-100 d-flex justify-content-center">
+    
+    <div class="card w-50 h-50 m-5">
+      <div class="card-header d-flex flex-row  bg-white">
+        <img src="assets/Mercado-Pago-Logo.png" alt="..." class="img-thumbnail  img-comprobante  ">
+        <h5 class="  ht-title ">Comprobante de pago pendiente</h5>
+        <p class="fecha">{{ fechaActual |  date:'short':'es'}}</p>
+    
+      </div>
+      <div class="card-body " *ngIf="transactionData">
+        <h4 class="card-title">Detalle de la operación : </h4>
+        <fieldset disabled class="bg-sucess m-5 justify-content-center">
+            <div class="row g-3 p-2 align-items-center">
+                <div class="col-auto">
+                  <label  class="col-form-label">Usuario</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text"  class="form-control"  value="{{ transactionData.collection_id }}" >
+                </div>
+                
+              </div>
+            <div class="row g-3 p-2 align-items-center">
+                <div class="col-auto">
+                  <label  class="col-form-label">Producto</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text"  class="form-control"  value="{{ transactionData.collection_status }}">
+                </div>
+                
+              </div>
+            <div class="row g-3 p-2 align-items-center">
+                <div class="col-auto">
+                  <label  class="col-form-label">Id Pago</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text"  class="form-control"  value="{{ transactionData.payment_id }}">
+                </div>
+                
+              </div>
+            <div class="row g-3 p-2 align-items-center">
+                <div class="col-auto">
+                  <label  class="col-form-label">Estado del pago</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text"  class="form-control" value="{{ transactionData.status }}">
+                </div>
+                
+              </div>
+            <div class="row g-3 p-2 align-items-center">
+                <div class="col-auto">
+                  <label  class="col-form-label">Detalle del Pago</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text"  class="form-control"  value="{{ transactionData.external_reference }}">
+                </div>
+                
+              </div>
+            <div class="row g-3 p-2 align-items-center">
+                <div class="col-auto">
+                  <label  class="col-form-label">Número de transacción</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text"  class="form-control" value="{{ transactionData.payment_type }}" >
+                </div>
+                
+              </div>
+            <div class="row g-3 p-2 align-items-center">
+                <div class="col-auto">
+                  <label  class="col-form-label">Referencia</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text"  class="form-control" value="{{ transactionData.merchant_order_id }}">
+                </div>
+                
+              </div>
+            <div class="row g-3 p-2 align-items-center">
+                <div class="col-auto">
+                  <label  class="col-form-label">Tipo de Pago</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text"  class="form-control" value="{{ transactionData.preference_id }}">
+                </div>
+                
+              </div>
+            <div class="row g-3 p-2 align-items-center">
+                <div class="col-auto">
+                  <label  class="col-form-label">Número de pedido</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text"  class="form-control" value="{{ transactionData.site_id }}" >
+                </div>
+                
+              </div>
+         
+            <div class="row g-3 p-2 align-items-center">
+                <div class="col-auto">
+                  <label  class="col-form-label">Modo de procesamiento</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text"  class="form-control" value=" {{ transactionData.processing_mode }}" >
+                </div>
+                
+              </div>
+            <div class="row g-3 p-2 align-items-center">
+                <div class="col-auto">
+                  <label  class="col-form-label">Id comerciante</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text"  class="form-control"  value="{{ transactionData.merchant_account_id }}">
+                </div>
+                
+              </div>
+          
+           
+          </fieldset>
+    
+      </div>
+    </div>
+
+</div>
+
+
+
+
+

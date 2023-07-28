@@ -1,0 +1,302 @@
+.circle {
+  position: absolute;
+ 
+ 
+}
+.descuento{
+  width: 140px;
+  height: 100px;
+  margin-bottom: 297px;
+  margin-left: 315px;
+}
+.promo {
+  display: flex;
+  justify-content: space-around;
+  height: 400px;
+
+}
+
+.card-body {
+  width: 126px;
+  height: 120px;
+  top: 90px;
+  left: 8px;
+  text-align: center;
+  justify-content: center;
+} 
+.button-compra {
+  width: 125px;
+  height: 47px;
+  top: 43px;
+  left: 21px;
+  border-radius: 21px;
+  background-color: yellow;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-align: center;
+}
+
+
+
+.item {
+   display: flex;
+    margin-right: 200px;
+    width: 370px;
+    height:340px ;
+    
+    margin-right: 10px;
+    justify-content: center;
+    text-align: center;
+    background: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+
+  }
+  .card-img {
+    width: 340px;
+  height: 190px;
+  top: 414px;
+  left: 260px;
+  background: #F0F1D3;
+  }
+
+  /* Estilos para resoluciones de 575px o menos */
+@media (max-width: 575px) {
+  /* Cambios en los estilos aquí */
+  
+  .circle {
+    position: absolute;
+   
+   
+  }
+  .descuento{
+    width: 100px;
+    height: 80px;
+    margin-bottom: 220px;
+    margin-left: 90px;
+  }
+  .card-body {
+    width: 100px;
+    height: 120px;
+    top: 100px;
+    left: 8px;
+    text-align: center;
+    justify-content: center;
+  } 
+  .promo {
+    display: flex;
+    justify-content: start;
+    height: 270px;
+    margin-bottom: 50px;
+  
+  }
+
+  .card-img-top {
+    width: 130px;
+    height: 80px;
+    top: 400px;
+    margin-left: 20px;
+    background: #F0F1D3;
+  }
+
+
+  .button-compra {
+    width: 80px;
+    height: 32px;
+    top: 43px;
+    left: 21px;
+    border-radius: 21px;
+    background-color: yellow;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align:center;
+  }
+  .card-text{
+    font-size: 8px;
+  }
+  
+  
+  .item {
+     display: flex;
+     flex-direction: column;
+      margin-right: 10px;
+      width: 120px;
+      height:240px ;
+      
+      margin-left: 30px;
+      justify-content: center;
+      text-align: center;
+      background: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+  
+    }
+    .card-img {
+      width: 100px;
+    height: 110px;
+    top: 414px;
+    left: 260px;
+    background: #F0F1D3;
+    }
+
+
+
+  }
+
+
+
+  @media (min-width: 576px) and (max-width: 767px) {
+
+    .circle {
+      position: absolute;
+     
+     
+    }
+    .descuento{
+      width: 120px;
+      height: 80px;
+      margin-bottom: 250px;
+      margin-left: 110px;
+    }
+    .promo {
+      display: flex;
+      justify-content: start;
+      height: 300px;
+    
+    }
+    
+    .card-body {
+      width: 126px;
+      height: 120px;
+      top: 98px;
+      left: 8px;
+      text-align: center;
+      justify-content: center;
+    } 
+    .button-compra {
+      width: 125px;
+      height: 47px;
+      top: 43px;
+      left: 21px;
+      border-radius: 21px;
+      background-color: yellow;
+      font-family: Roboto;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 30px;
+      letter-spacing: 0em;
+      text-align: left;
+      text-align: center;
+    }
+    
+    
+    
+    .item {
+       display: flex;
+       flex-direction: column;
+        margin-right: 10px;
+        width: 170px;
+        height:290px ;
+        
+        margin-left: 20px;
+        justify-content: center;
+        text-align: center;
+        background: #fff;
+      background-clip: border-box;
+      border: 1px solid rgba(0,0,0,.125);
+      border-radius: .25rem;
+    
+      }
+      .card-img {
+        width: 100px;
+      height: 110px;
+      top: 414px;
+      left: 260px;
+      background: #F0F1D3;
+      }
+  
+
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    
+    .circle {
+      position: absolute;
+     
+     
+    }
+    .descuento{
+      width: 120px;
+      height: 80px;
+      margin-bottom: 250px;
+      margin-left: 110px;
+    }
+    .promo {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      height: 300px;
+    
+    }
+    
+    .card-body {
+      width: 126px;
+      height: 120px;
+      top: 98px;
+      left: 8px;
+      text-align: center;
+      justify-content: center;
+    } 
+    .button-compra {
+      width: 125px;
+      height: 47px;
+      top: 43px;
+      left: 21px;
+      border-radius: 21px;
+      background-color: yellow;
+      font-family: Roboto;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 30px;
+      letter-spacing: 0em;
+      text-align: left;
+      text-align: center;
+    }
+    
+    
+    
+    .item {
+       display: flex;
+       flex-direction: column;
+        margin-right: 10px;
+        width: 170px;
+        height:290px ;
+        
+        margin-left: 80px;
+        justify-content: center;
+        text-align: center;
+        background: #fff;
+      background-clip: border-box;
+      border: 1px solid rgba(0,0,0,.125);
+      border-radius: .25rem;
+    
+      }
+      .card-img {
+        width: 100px;
+      height: 110px;
+      top: 414px;
+      left: 260px;
+      background: #F0F1D3;
+      }
+  
+
+  }

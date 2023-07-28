@@ -1,0 +1,153 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "imagen description";
+}
+
+.imagen {
+  grid-area: imagen;
+}
+
+.description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "tittle tittle"
+    "button_number button_add"
+    "description_one description_one"
+    "envio envio"
+    "metodo_pago metodo_pago";
+  grid-area: description;
+}
+
+.button_number {
+  grid-area: button_number;
+}
+
+.button_add {
+  grid-area: button_add;
+}
+
+.tittle {
+  grid-area: tittle;
+}
+
+.description_one {
+  grid-area: description_one;
+}
+
+.envio {
+  grid-area: envio;
+}
+
+.metodo_pago {
+  grid-area: metodo_pago;
+}
+/* imagen de producto */
+.custom-box {
+  background-color: #D4AF37;
+  padding: 20px;
+  text-align: center;
+  margin-top: 100px;
+margin-right: 50px;
+margin-bottom: 50px;
+margin-left: 50px;
+}
+
+.box-image {
+  max-width: 100%;
+  height: auto;
+
+}
+
+
+
+/* el titulo */
+.button_number,
+.button_add {
+
+  margin-top: 60px;
+margin-right: 60px;
+margin-bottom: 60px;
+margin-left: 60px;
+}
+
+
+
+.product-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.product-description {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 24px;
+  font-weight: bold;
+}
+/* boton de agregar carrito */
+.btn-add-to-cart {
+  background-color: black;
+  color: yellow;
+}
+
+/* descricion uno */
+.product-description {
+  width: 100%;
+}
+
+.title {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 24px;
+  color: #000000;
+}
+
+.description-list {
+  list-style-type: disc;
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-size: 18px;
+  color: #000000;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+/* parrafo de envio  */
+.options-paragraph {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.options-paragraph i {
+  margin-right: 10px;
+}
+
+.paragraph-content p {
+  margin: 0;
+}
+/* parrafo de pagos */
+.methods-paragraph {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.methods-paragraph i {
+  margin-right: 10px;
+}
+
+.paragraph-content p {
+  margin: 0;
+}
+

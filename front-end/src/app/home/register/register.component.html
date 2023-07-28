@@ -1,0 +1,40 @@
+
+<div class="container mt-5 mb-5">
+  <div class="row d-flex justify-content-center shadow p-3 mb-5 bg-body rounded">
+      <form class="anchoForm" #f="ngForm" (ngSubmit)="submitForm()">
+        <h4 class="text-center mt-4">Crear cuenta</h4>
+        <p class="text-center mb-4 mt-sm-3">Ingresa los sigientes datos</p>
+        <div class="mb-3">
+          <label for="name" class="form-label fw-bold">Nombre</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Eje Ana" autocomplete="off" required [(ngModel)]="name">
+        </div>
+        <div class="mb-3">
+          <label for="lastName" class="form-label fw-bold">Apellido</label>
+          <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Eje Perez" autocomplete="off" required [(ngModel)]="lastName">
+        </div>
+        <div class="mb-3">
+          <label for="phoneNumber" class="form-label fw-bold ">Teléfono</label>
+          <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Eje 1152869800" autocomplete="off" required [(ngModel)]="phoneNumber">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label fw-bold">Email</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Eje tuemail@gmail.com" autocomplete="off" required [(ngModel)]="email">
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label fw-bold">Contraseña</label>
+          <input type="password" class="form-control" id="password" name="password" autocomplete="off" required [(ngModel)]="password">
+        </div>
+        <div class="mb-3">
+          <label for="confirmPassword" class="form-label fw-bold">Confirmar contraseña</label>
+          <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" autocomplete="off" required [(ngModel)]="confirmPassword">
+        </div>
+        <div class="mt-4 mt-sm-5">
+            <button class="btn button-register w-100 mb-5" [disabled]="!f.valid" type="submit"[ngClass]="{ 'disabled-button': !f.valid }" >Crear cuenta</button>
+        </div>
+
+      </form>
+
+  </div>
+</div>
+<app-footer></app-footer>
+

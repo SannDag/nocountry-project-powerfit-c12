@@ -1,0 +1,173 @@
+.marcas {
+
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 150px;
+    top: 967px;
+    left: -11px;
+    margin-top: 28px;
+
+    padding: 20px;
+
+    background: yellow;
+}
+
+.img{
+    padding-left: var(--paddLeft);
+    padding-right: var(--paddRight);
+}
+
+.slider-wrap {
+    position: relative;
+    overflow: hidden;
+    height: 110px;
+}
+
+.slider-main {
+    display: flex;
+    flex-direction: row;
+
+    position: absolute;
+    width: 1000%;
+
+    animation: slide 2s linear infinite;
+    -webkit-animation: slide 10s linear infinite;
+    width: calc(212px*8);
+}
+
+.item {
+    display: inline-block;
+    /* display: flex; */
+    width: 312px;
+    margin-right: 10px;
+    height: 150px;
+    position: relative;
+    margin: 0;
+}
+
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.prev {
+    position: absolute;
+    left: 33px;
+    top: 50%;
+    background: yellow;
+    transform: translate(-50%, -50%);
+}
+
+.next {
+    position: absolute;
+    right: -5px;
+    top: 50%;
+    background: yellow;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes slide {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(calc(-212px*8));
+        transform: translateX(calc(-212px*8));
+    }
+
+
+}
+
+@media (max-width: 575px) {
+
+    .marcas {
+
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        height: 80px;
+        top: 967px;
+        left: -11px;
+        margin-top: 28px;
+    
+        padding: 20px;
+    
+        background: yellow;
+    }
+
+    .item {
+        display: inline-block;
+        /* display: flex; */
+        width: 312px;
+        margin-right: 10px;
+        height: 80px;
+        position: relative;
+        margin: 0;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .marcas {
+
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        height: 80px;
+        top: 967px;
+        left: -11px;
+        margin-top: 28px;
+    
+        padding: 20px;
+    
+        background: yellow;
+    }
+
+    .item {
+        display: inline-block;
+        /* display: flex; */
+        width: 312px;
+        margin-right: 10px;
+        height: 80px;
+        position: relative;
+        margin: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Estilos CSS aquí */
+    .marcas {
+
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        height: 80px;
+        top: 967px;
+        left: -11px;
+        margin-top: 28px;
+    
+        padding: 20px;
+    
+        background: yellow;
+    }
+
+    .item {
+        display: inline-block;
+        /* display: flex; */
+        width: 312px;
+        margin-right: 10px;
+        height: 80px;
+        position: relative;
+        margin: 0;
+    }
+  }

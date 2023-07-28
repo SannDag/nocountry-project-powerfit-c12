@@ -1,0 +1,113 @@
+.box{
+  width: 95%;
+  margin:  0 auto;
+}
+.supplement,.equipment,.clothing{
+  border: 1px solid #000;
+  display:flex;
+  align-items: center;
+  margin:20px 0;
+}
+
+img{
+  width: 257px;
+  object-fit: cover;
+}
+
+.imgLuci{
+  width: 210px;
+
+}
+
+.supplement p{
+  color: #000;
+font-family: Roboto;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.info{
+  margin-right: 15px;
+}
+.saleoff{
+  background-color: #FE620B;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.saleoff span{
+  color:#FFF;
+  font-size: 1.2em;
+
+
+}
+.clothing img{
+  width: 150px;
+  height: 200px;
+  margin: 0;
+  object-fit: cover;
+}
+.talle{
+  margin: 0 20px;
+}
+.talle input{
+  margin-left:10px;
+}
+.btn-outline-secondary{
+  width: 40px;
+  margin: 5px 3px;
+  text-align: center;
+}
+@media screen and (width < 680px){
+  .supplement,.equipment,.clothing{
+    display:grid;
+  }
+  img{
+    width: 207px;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  .boximg{
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  form{
+    width: 200px;
+    margin: 0 auto;
+  }
+  .sbox,.dbox{
+    position: relative;
+  }
+  .sbox .info ,.sbox .descript{
+    width: 100%;
+  }
+  .info{
+    text-align: center;
+  }
+  .saleoff{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 15px;
+  }
+}
+@media screen and (width < 800px){
+
+  img{
+    width: 207px;
+    object-fit: cover;
+  }
+  p{
+    font-size: 15px;
+  }
+  .imgLuci{
+    width: 207px;
+    object-fit: cover;
+  }
+}

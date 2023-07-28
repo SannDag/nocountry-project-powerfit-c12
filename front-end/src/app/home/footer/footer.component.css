@@ -1,0 +1,97 @@
+footer{
+  display: flex;
+  flex-direction: column;
+  background-color: #F7FC00;
+  max-width: 1400px;
+  height: 288px;
+  
+
+}
+
+.container h2{
+  color: #000;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.container a, .container p{
+  display: block;
+  color: #000;
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.container a:hover{
+  color: rgb(121, 121, 121);
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  grid-template-areas: "contact   redbox " "Payments  shipping ";
+}
+
+.contactbox{
+  grid-area: contact;
+  margin-top: 17px;
+}
+
+.redbox{
+  grid-area: redbox;
+  margin-top: 17px;
+}
+
+.Payments{
+  grid-area: Payments;
+  margin-top: 17px;
+}
+
+.shipping{
+  grid-area: shipping;
+  margin-top: 17px;
+}
+@media screen and (width > 680px){
+  .container h2{
+    font-size: 20px;
+  }
+  .container a, .container p{
+    font-size: 18px;
+  }
+
+}
+
+@media screen and (width > 780px){
+  .container{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-areas: "contact Payments shipping redbox";
+  }
+  .boxpadding{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .container h2{
+    font-size: 28px;
+  }
+  .container a, .container p{
+    font-size: 20px;
+  }
+}
+
+@media screen and (width > 1000px){
+  .container h2{
+    font-size: 36px;
+  }
+  .container a, .container p{
+    font-size: 24px;
+  }
+}

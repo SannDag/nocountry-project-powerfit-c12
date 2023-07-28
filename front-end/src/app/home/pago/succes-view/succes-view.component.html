@@ -1,0 +1,129 @@
+
+
+<div class="container continer1  w-100 d-flex justify-content-center">
+
+    <div class="card w-50 h-50 m-5">
+      <div class="card-header d-flex flex-row  bg-white">
+        <img src="assets/Mercado-Pago-Logo.png" alt="..." class="img-thumbnail  img-comprobante  ">
+        <h5 class="  ht-title ">Comprobante de pago</h5>
+        <p class="fecha">{{ fechaActual |  date:'short':'es'}}</p>
+
+      </div>
+      <div class="card-body " *ngIf="transactionData">
+        <h4 class="card-title">Detalle de la operación : </h4>
+        <fieldset disabled class="bg-sucess m-5 justify-content-center">
+            <div class="row g-3 p-2 align-items-center">
+                <div class="col-auto">
+                  <label  class="col-form-label">Usuario</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text"  class="form-control"  value="{{ transactionData.collection_id }}" >
+                </div>
+
+              </div>
+            <div class="row g-3 p-2 align-items-center">
+                <div class="col-auto">
+                  <label  class="col-form-label">Producto</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text"  class="form-control"  value="{{ transactionData.collection_status }}">
+                </div>
+
+              </div>
+            <div class="row g-3 p-2 align-items-center">
+                <div class="col-auto">
+                  <label  class="col-form-label">Id Pago</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text"  class="form-control"  value="{{ transactionData.payment_id }}">
+                </div>
+
+              </div>
+            <div class="row g-3 p-2 align-items-center">
+                <div class="col-auto">
+                  <label  class="col-form-label">Estado del pago</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text"  class="form-control" value="{{ transactionData.status }}">
+                </div>
+
+              </div>
+            <div class="row g-3 p-2 align-items-center">
+                <div class="col-auto">
+                  <label  class="col-form-label">Detalle del Pago</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text"  class="form-control"  value="{{ transactionData.external_reference }}">
+                </div>
+
+              </div>
+            <div class="row g-3 p-2 align-items-center">
+                <div class="col-auto">
+                  <label  class="col-form-label">Número de transacción</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text"  class="form-control" value="{{ transactionData.payment_type }}" >
+                </div>
+
+              </div>
+            <div class="row g-3 p-2 align-items-center">
+                <div class="col-auto">
+                  <label  class="col-form-label">Referencia</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text"  class="form-control" value="{{ transactionData.merchant_order_id }}">
+                </div>
+
+              </div>
+            <div class="row g-3 p-2 align-items-center">
+                <div class="col-auto">
+                  <label  class="col-form-label">Tipo de Pago</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text"  class="form-control" value="{{ transactionData.preference_id }}">
+                </div>
+
+              </div>
+            <div class="row g-3 p-2 align-items-center">
+                <div class="col-auto">
+                  <label  class="col-form-label">Número de pedido</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text"  class="form-control" value="{{ transactionData.site_id }}" >
+                </div>
+
+              </div>
+
+            <div class="row g-3 p-2 align-items-center">
+                <div class="col-auto">
+                  <label  class="col-form-label">Modo de procesamiento</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text"  class="form-control" value=" {{ transactionData.processing_mode }}" >
+                </div>
+
+              </div>
+            <div class="row g-3 p-2 align-items-center">
+                <div class="col-auto">
+                  <label  class="col-form-label">Id comerciante</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text"  class="form-control"  value="{{ transactionData.merchant_account_id }}">
+                </div>
+
+              </div>
+
+
+          </fieldset>
+
+      </div>
+    </div>
+
+</div>
+<app-footer></app-footer>
+
+
+
+
+
+

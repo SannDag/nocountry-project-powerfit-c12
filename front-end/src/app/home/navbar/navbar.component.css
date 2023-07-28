@@ -1,0 +1,208 @@
+
+header {
+    background-color: #000;
+    max-width: 1400px;
+
+}
+
+.logo {
+    max-width: 160px;
+}
+
+.icons {
+    max-width: 45px;
+}
+
+.account {
+    border: 4px solid white;
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 18px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    gap: 49px;
+
+}
+
+a:hover {
+    color: #F7FC00;
+}
+
+h6 {
+    color: #F7FC00;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.form-control {
+    height: 45px;
+    border-radius: 20px;
+    background-image: url(../../../assets/busqueda.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 25px;
+  }
+
+
+.btn {
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+}
+
+.btn-sm-custom {
+  font-size: 12px; /* Tamaño del texto */
+  padding: 0.25rem 0.5rem; /* Ajustar el relleno (padding) para reducir el tamaño del botón */
+}
+/* Estilos para el enlace activo */
+.nav-item a.nav-link.router-link-active {
+  color: yellow;
+}
+
+@media (min-width: 768px) {
+    .form-inline .form-control {
+        width: 210px;
+
+    }
+}
+
+
+@media (min-width: 992px) {
+    .form-inline .form-control {
+        width: 440px;
+
+    }
+}
+
+@media (min-width: 1200px) {
+    .form-inline .form-control {
+        width: 600px;
+
+    }
+}
+
+
+.navbar .navbar-toggler {
+    border: none;
+}
+
+.navbar-light .navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar {
+    padding: 1rem;
+}
+
+.main-menu {
+    position: relative;
+    z-index: 3;
+}
+
+.sub-menu {
+    position: relative;
+    z-index: 2;
+    padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+    .sub-menu {
+        padding: 0 1rem;
+    }
+
+    .sub-menu.navbar-expand-md .navbar-nav .nav-link {
+        padding: 1rem 1.5rem;
+    }
+}
+
+
+#sidebar {
+    background: #000;
+    height: 50%;
+    left: -100%;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+    position: fixed;
+    transition: 0.4s ease-in-out;
+    width: 84%;
+    z-index: 5001;
+    padding: 1.25rem 1rem 1rem;
+    border-radius: 0px 20px 20px 0px;
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#sidebar .sidebar-header {
+    background: #000;
+    border-bottom: 1px solid #e4e4e4;
+    padding-bottom: 1.5rem;
+}
+
+#sidebar ul p {
+    color: #000;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 20px 16px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+#sidebar ul li a:hover {
+    color: #F7FC00;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+#sidebar a[aria-expanded="true"] {
+    color: #F7FC00;
+    background: #e6f2ff;
+    border-radius: 6px;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+#sidebar .links .dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.utility-nav {
+    background: #e4e4e4;
+    padding: 0.5rem 1rem;
+}
+
+.utility-nav p {
+    margin-bottom: 0;
+}
+
+.search-bar {
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.1);
+
+}

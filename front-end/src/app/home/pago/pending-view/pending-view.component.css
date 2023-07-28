@@ -1,0 +1,18 @@
+.img-comprobante{
+    width: 130px;
+    height: 100px;
+}
+
+.ht-title{
+    margin-left: 10px;
+}
+.fecha{
+    margin-left: 22px;
+}
+.card-body{
+    background: rgba(244, 244, 244, 1);
+
+}
+.continer1{
+    margin-left: 60px;
+}

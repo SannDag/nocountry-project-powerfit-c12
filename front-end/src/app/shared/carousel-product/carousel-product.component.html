@@ -1,0 +1,73 @@
+
+
+<section class="marcas grid-container" >
+  <div class="container-fluid">
+    <div class="slider-wrap " #myContainer >
+       <div class="slider-main sidebar" #mySlider [style.transform]="'translateX(' + translateXValue + 'px)'" >
+        <div class="item card" >
+          <img src="assets/producto1.png"  class="card-img-top img-thumbnail" alt="Nombre del producto">
+          <div class="card-body">
+            <div>
+
+              <h5 class="card-title">Nombre del producto1</h5>
+              <p class="card-title">Precio</p>
+            </div>
+            <div>
+
+              <a href="#" class=" button-compra btn btn-warning"> Comprar</a>
+            </div>
+          </div>
+         </div>
+        <div class="item card" >
+          <img src="assets/producto3.png"  class="card-img-top img-thumbnail" alt="Nombre del producto">
+          <div class="card-body">
+            <div>
+
+              <h5 class="card-title">Nombre del producto1</h5>
+              <p class="card-title">Precio</p>
+            </div>
+            <div>
+
+              <a href="#" class=" button-compra btn btn-warning"> Comprar</a>
+            </div>
+          </div>
+         </div>
+        <div class="item card" >
+          <img src="assets/producto4.png"  class="card-img-top img-thumbnail" alt="Nombre del producto">
+          <div class="card-body">
+            <div>
+
+              <h5 class="card-title">Nombre del producto1</h5>
+              <p class="card-title">Precio</p>
+            </div>
+            <div>
+
+              <a href="#" class=" button-compra btn btn-warning"> Comprar</a>
+            </div>
+          </div>
+         </div>
+        <div class="item card" >
+          <img src="assets/producto1.png"  class="card-img-top img-thumbnail" alt="Nombre del producto">
+          <div class="card-body">
+            <div>
+
+              <h5 class="card-title">Nombre del producto1</h5>
+              <p class="card-title">Precio</p>
+            </div>
+            <div>
+
+              <a href="#" class=" button-compra btn btn-warning"> Comprar</a>
+            </div>
+          </div>
+         </div>
+ 
+       </div>
+       <div class="button-area">
+           <button type="button" class="prev btn btn-light" (click)="setBack()"  #buttonLeft><i class="fa-solid fa-angle-left"></i></button>
+           <button type="button" class="next btn btn-light" (click)="setNext()" #buttonRight><i class="fa-solid fa-angle-right"></i> </button>
+       </div>
+    </div>
+  </div>
+</section> 
+
+

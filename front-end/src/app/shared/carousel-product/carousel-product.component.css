@@ -1,0 +1,193 @@
+:root {
+  --slide-transform: 0;
+  --transition: transform 1s;
+}
+
+
+
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+
+
+.card-body {
+  width: 220px;
+  height: 25px;
+  top: 88px;
+  left: 8px;
+  justify-content: center;
+  text-align: center;
+
+
+}
+.card-title{
+  font-size: 16px;
+}
+
+.button-compra {
+  width: 120px;
+  height: 47px;
+  top: 43px;
+  left: 21px;
+  border-radius: 21px;
+  background-color: yellow;
+  font-family: Roboto;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-align: center;
+}
+
+.card-img-top {
+  width: 280px;
+  height: 150px;
+  top: 414px;
+  left: 260px;
+  background: #F0F1D3;
+}
+
+.marcas {
+  padding: 30px;
+  width: auto;
+  display: flex;
+  flex-direction:row ;
+}
+
+.slider-wrap {
+  position: relative;
+  overflow: hidden;
+  height: 550px;
+}
+
+.slider-main {
+  position: absolute;
+  width: 1000%;
+  height: 300px;
+  display: flex;
+  transform: translateX(var(--slide-transform));
+  transition: var(--transition);
+}
+
+.item {
+  display: inline-block;
+  width: 270px;
+  margin-right: 350px;
+  height: 340px;
+  position: relative;
+  margin: 10px;
+  margin-right: 10px;
+  padding: 20px;
+  
+
+}
+
+.prev {
+  position: absolute;
+  left: 33px;
+  top: 30%;
+  background: white;
+  transform: translate(-50%, -50%);
+}
+
+.next {
+  position: absolute;
+  right: -5px;
+  top: 30%;
+  background: white;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 575px) {
+
+  /* Estilos CSS aquí */
+  .marcas {
+    padding: 30px;
+    width: auto;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+  }
+  
+  .slider-wrap {
+    position: relative;
+    overflow: hidden;
+    height: 550px;
+  }
+  
+  .slider-main {
+    position: absolute;
+    width: 600px;
+
+    display: flex;
+    justify-content: space-around;
+  justify-content: center;
+
+  }
+  .card-title{
+    font-size: 12px;
+  }
+
+  .item {
+    display: inline-block;
+    width: 200px;
+    margin-right: 350px;
+    height: 250px;
+    position: relative;
+    margin: 10px;
+    margin-right: 10px;
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+   
+  
+  
+  }
+  .card-img-top {
+    width: 130px;
+    height: 90px;
+    top: 400px;
+    margin-left: 20px;
+    background: #F0F1D3;
+  }
+
+  .card-body {
+    width: 100px;
+    height: 25px;
+    bottom: 2px;
+    left: 8px;
+    text-align: center;
+  
+  }
+  .button-compra {
+    width: 80px;
+    height: 32px;
+    top: 43px;
+    left: 21px;
+    border-radius: 21px;
+    background-color: yellow;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align:center;
+  }
+}
+

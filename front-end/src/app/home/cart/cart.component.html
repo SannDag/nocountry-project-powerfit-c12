@@ -1,0 +1,103 @@
+<!--Navbar-->
+
+<!--Vista del carrito-->
+
+
+<ng-container *ngIf="cartData">
+  <section class="cart-view">
+    <div class="container">
+      <div class="page-title">
+        <h2>Carrito de compras</h2>
+      </div>
+      <div class="mt-4">
+        <div class="row">
+          <div></div>
+          <div class="col-md-8 cart">
+            <div class="row align-items-center">
+              <div class="row main justify-content-center">
+                <!-- Iterar sobre los productos -->
+                <div class="col-6 card" *ngFor="let product of cartData.products">
+                  <div class="row mt-4 mb-4">
+                    <div class="col-2">
+                      <button class="btn trash-can" type="button" (click)="deletedProduct(cartData.id ,product.id)">
+                        <img src="../../../assets/DELETE.svg" alt="delete" />
+                      </button>
+
+                    </div>
+
+                    <div class="col-2" *ngIf="product.category === 'Indumentaria'">
+                      <div *ngFor="let image of product.imgList; let index = index">
+                        <img
+                          *ngIf="index === 1"
+                          class="product img-fluid"
+                          [src]="image?.fileUrl"
+                          alt="{{ product.name }}"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-2" *ngIf="product.category != 'Indumentaria'">
+                      <div *ngFor="let image of product.imgList; let index = index">
+                        <img
+                          *ngIf="index === 0"
+                          class="product img-fluid"
+                          [src]="image?.fileUrl"
+                          alt="{{ product.name }}"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="row">
+                        <div class="description">
+                          <p>{{ product.name }}</p>
+                          <p>&dollar;{{ product.price }}</p>
+                          <form>
+                            Cantidad
+                            <select name="producto" id="item">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                            </select>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fin de iteración de productos -->
+              </div>
+            </div>
+          </div>
+
+          <!--Comprobación de la compra-->
+
+          <div class="col-md-4 summary"*ngIf="cartData.products">
+            <!-- Aquí puedes mostrar el resumen de la compra -->
+            <h1 class="text-center">Total de la compra</h1>
+            <h3 class="text-center">$ {{cartData.amount}}</h3>
+            <div class="row d-flex justify-content-center">
+              <button class="btn-checkout mt-2" (click)="comprar(cartData.products)">Ir a comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</ng-container>
+<ng-container *ngIf="!estaLogueado() || !cartData?.products">
+  <div class="container mt-5 mb-5 ">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-8">
+        <h2 class="empty-cart">No tienes productos en el carrito</h2>
+        <p>Agrega productos para continuar</p>
+      </div>
+
+    </div>
+  </div>
+</ng-container>
+
+<!-- Footer -->
+<app-footer></app-footer>

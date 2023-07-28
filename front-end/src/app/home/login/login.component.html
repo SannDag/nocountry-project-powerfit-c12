@@ -1,0 +1,43 @@
+<!--Header-->
+
+<!--Body-->
+<section>
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="mb-md-5 mt-md-4 pb-5 text-center">
+
+          <h2 class="fw-bold mb-2 text-uppercase">Ya tengo una cuenta</h2>
+          <p>Para iniciar sesión ingresa tu mail y contraseña</p>
+
+          <form #f="ngForm" (ngSubmit)="loginSecurely()" novalidate>
+
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="email" name="email" class="form-control form-control-lg" placeholder="Ingresa tu e-mail" [(ngModel)]="email" required />
+              <label class="form-label" for="email"></label>
+            </div>
+
+            <div class="form-outline form-white mb-4">
+              <input type="password" id="password" name="password" class="form-control form-control-lg" placeholder="Ingresa tu contraseña" [(ngModel)]="password" required />
+              <label class="form-label" for="password"></label>
+            </div>
+
+            <p class="small mb-5 pb-lg-2"><a href="#!">Forgot password?</a></p>
+
+            <button class="btn btn-login" type="submit">Ingresar</button>
+
+          </form>
+
+        </div>
+
+        <div>
+          <h2 class="fw-bold mb-2 text-uppercase text-center">Nuevo en Power fit</h2>
+          <br>
+          <button type="button" class="btn btn-register w-100" (click)="register()">Crear una cuenta</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Footer-->
+<app-footer></app-footer>

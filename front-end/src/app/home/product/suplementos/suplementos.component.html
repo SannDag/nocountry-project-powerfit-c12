@@ -1,0 +1,30 @@
+
+<div class="container-fluid bg-dark pb-5">
+  <div class="container bg-dark mb-5">
+    <h1 class="text-center mb-5">Suplementos</h1>
+    <div *ngIf="products.length > 0">
+      <div class="row row-cols-md-3 g-4">
+        <div  class="col" *ngFor="let product of products">
+            <div class="card p-2 border-3 align-items-center">
+              <div *ngIf="product.imgList && product.imgList.length > 0">
+                   <a [routerLink]="['/detail', product.id]">
+                    <img class="card-img-top shadow img-zoom img-fluid" [src]="product.imgList[0].fileUrl" [alt]="product.imgList[0].name">
+                  </a>
+              </div>
+              <div class="card-body text-center">
+
+                  <h4 class="card-title">{{product.name}}</h4>
+                  <!--<p class="card-text">{{product.description}}</p>-->
+                  <p><span>${{product.price}}</span></p>
+                <div class="">
+                  <button type="button" class="btn btn-warning btn-custom" (click)="addToPreference(product)">Comprar</button>
+                </div>
+
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

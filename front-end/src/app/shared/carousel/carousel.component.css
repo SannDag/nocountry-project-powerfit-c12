@@ -1,0 +1,769 @@
+.flex-container {
+    /* display: flex;
+    flex-direction: row; */
+
+    border-bottom-right-radius: 300px;
+    border-top-right-radius: 300px;
+    background: linear-gradient(270.11deg, #F7FC00 11.37%, rgba(247, 252, 0, 0) 126.95%);
+    width: 1250px;
+    height: 499px;
+    top: 413px;
+    margin-right: 3500px;
+    /* background-color: aquamarine;
+    padding: 5px;
+    border: 2px solid black; */
+}
+
+.flex-container div {
+
+    width: 450px;
+    margin: 1px;
+    text-align: end;
+    line-height: 75px;
+    margin-left: 100px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400px;
+    line-height: 91px;
+    hyphens: manual;
+
+
+}
+
+.flex-container div h1 {
+    font-weight: 400;
+    line-height: 91px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-left: 200px;
+    font-family: 'Michroma', sans-serif;
+    font-size: 54px;
+    color: #FFFFFF;
+
+}
+
+.azul {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.image {
+    width: 362px;
+    height: 339px;
+    margin-top: 150px;
+    /* top: 109px;
+    left: 707px;
+    bottom: 500px; */
+
+}
+
+@media (min-width: 300px) and (max-width: 390px) {
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+
+        width: 380px;
+        height: 150px;
+        top: 127.4453125px;
+        left: -64px;
+
+
+
+    }
+
+    .flex-container div {
+
+        display: flex;
+        align-items: center;
+       /* justify-content: flex-start;*/
+        margin: 5px;
+        width: 250px;
+        height: 90px;
+        font-weight: 200px;
+
+
+
+
+
+    }
+
+    .flex-container div h1 {
+
+
+        width: 110px;
+        height: 50px;
+        margin: 1px;
+        margin-top: 1px;
+        font-size: 18px;
+        font-family: Michroma;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+
+
+
+
+    }
+
+    .flex-container div button {
+
+        width: 50px;
+        height: 24px;
+        margin: 1px;
+        /* margin-right: 160px; */
+        text-align: center;
+        font-size: 10px;
+        font-family: roboto;
+        color: #F7FC00;
+        background: black;
+        font: 0.5em roboto;
+        border-radius: 26.200000762939453px;
+
+
+    }
+
+    .image {
+        width: 90px;
+        height: 90px;
+        margin-top: 20px;
+        top: 80;
+        left: 10px;
+
+    }
+
+}
+
+
+@media  (min-width: 400px) and (max-width:490px) {
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+
+        width: 352px;
+        height: 150px;
+        top: 127.4453125px;
+        left: -64px;
+
+
+
+    }
+
+    .flex-container div {
+
+        display: flex;
+        align-items: center;
+        /*justify-content: start;*/
+        margin: 5px;
+        width: 250px;
+        height: 90px;
+        font-weight: 200px;
+
+
+
+
+
+    }
+
+    .flex-container div h1 {
+
+
+        width: 110px;
+        height: 50px;
+        margin: 1px;
+        margin-top: 1px;
+        font-size: 18px;
+        font-family: Michroma;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+
+
+
+
+    }
+
+    .flex-container div button {
+
+        width: 50px;
+        height: 24px;
+        margin: 1px;
+        /* margin-right: 160px; */
+        text-align: center;
+        font-size: 10px;
+        font-family: roboto;
+        color: #F7FC00;
+        background: black;
+        font: 0.5em roboto;
+        border-radius: 26.200000762939453px;
+
+
+    }
+
+    .image {
+        width: 90px;
+        height: 90px;
+        margin-top: 20px;
+        top: 80;
+        left: 10px;
+
+    }
+
+}
+
+
+
+
+
+@media (min-width: 500px) and (max-width: 600px) {
+
+    /* claro*/
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+
+        width: 480px;
+        height: 150px;
+        top: 127.4453125px;
+        left: -64px;
+
+
+
+    }
+
+    .flex-container div {
+
+        display: flex;
+        align-items: center;
+        /*justify-content: start;*/
+        margin: 5px;
+        width: 250px;
+        height: 90px;
+        font-weight: 200px;
+
+
+
+
+
+    }
+
+    .flex-container div h1 {
+
+
+        width: 110px;
+        height: 50px;
+        margin: 1px;
+        margin-top: 1px;
+        font-size: 18px;
+        font-family: Michroma;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+
+
+
+
+    }
+
+    .flex-container div button {
+
+        width: 50px;
+        height: 24px;
+        margin: 1px;
+        /* margin-right: 160px; */
+        text-align: center;
+        font-size: 10px;
+        font-family: roboto;
+        color: #F7FC00;
+        background: black;
+        font: 0.5em roboto;
+        border-radius: 26.200000762939453px;
+
+
+    }
+
+    .image {
+        width: 90px;
+        height: 90px;
+        margin-top: 20px;
+        top: 80;
+        left: 10px;
+
+    }
+
+
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+
+    /* claro*/
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+
+        width: 480px;
+        height: 150px;
+        top: 127.4453125px;
+        left: -64px;
+
+
+
+    }
+
+    .flex-container div {
+
+        display: flex;
+        align-items: center;
+       /* justify-content: start;*/
+        margin: 5px;
+        width: 250px;
+        height: 90px;
+        font-weight: 200px;
+
+
+
+
+
+    }
+
+    .flex-container div h1 {
+
+
+        width: 110px;
+        height: 50px;
+        margin: 1px;
+        margin-top: 1px;
+        font-size: 18px;
+        font-family: Michroma;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+
+
+
+
+    }
+
+    .flex-container div button {
+
+        width: 50px;
+        height: 24px;
+        margin: 1px;
+        /* margin-right: 160px; */
+        text-align: center;
+        font-size: 10px;
+        font-family: roboto;
+        color: #F7FC00;
+        background: black;
+        font: 0.5em roboto;
+        border-radius: 26.200000762939453px;
+
+
+    }
+
+    .image {
+        width: 90px;
+        height: 90px;
+        margin-top: 20px;
+        top: 80;
+        left: 10px;
+
+    }
+
+
+
+}
+
+@media (min-width: 700px) and (max-width: 800px) {
+
+    /* claro*/
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+
+        width: 600px;
+        height: 250px;
+        top: 127.4453125px;
+        left: -64px;
+
+
+
+    }
+
+    .flex-container div {
+
+        display: flex;
+        align-items: center;
+        /*justify-content: start;*/
+        margin: 5px;
+        width: 250px;
+        height: 90px;
+        font-weight: 200px;
+
+
+
+
+
+    }
+
+    .flex-container div h1 {
+
+
+        width: 110px;
+        height: 50px;
+        margin: 1px;
+        margin-top: 50px;
+        font-size: 28px;
+        font-family: Michroma;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+
+
+
+
+    }
+
+    .flex-container div button {
+
+        width: 50px;
+        height: 24px;
+        margin: 1px;
+        /* margin-right: 160px; */
+        text-align: center;
+        font-size: 10px;
+        font-family: roboto;
+        color: #F7FC00;
+        background: black;
+        font: 0.5em roboto;
+        border-radius: 26.200000762939453px;
+
+
+    }
+
+    .image {
+        width: 200px;
+        height: 200px;
+        margin-top: 150px;
+        left: 10px;
+
+    }
+
+
+
+}
+
+@media (min-width: 800px) and (max-width: 900px) {
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+
+        width: 700px;
+        height: 250px;
+        top: 127.4453125px;
+        left: -64px;
+
+
+
+    }
+
+    .flex-container div {
+
+        display: flex;
+        align-items: center;
+        /*justify-content: start;*/
+        margin: 5px;
+        width: 250px;
+        height: 90px;
+        font-weight: 200px;
+
+
+
+
+
+    }
+
+    .flex-container div h1 {
+
+
+        width: 110px;
+        height: 50px;
+        margin: 1px;
+        margin-top: 50px;
+        font-size: 28px;
+        font-family: Michroma;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+
+
+
+
+    }
+
+    .flex-container div button {
+
+        width: 50px;
+        height: 24px;
+        margin: 1px;
+        /* margin-right: 160px; */
+        text-align: center;
+        font-size: 10px;
+        font-family: roboto;
+        color: #F7FC00;
+        background: black;
+        font: 0.5em roboto;
+        border-radius: 26.200000762939453px;
+
+
+    }
+
+    .image {
+        width: 200px;
+        height: 200px;
+        margin-top: 150px;
+        left: 10px;
+
+    }
+
+}
+
+@media (min-width: 900px) and (max-width: 990px) {
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+
+        width: 700px;
+        height: 250px;
+        top: 127.4453125px;
+        left: -64px;
+
+
+
+    }
+
+    .flex-container div {
+
+        display: flex;
+        align-items: center;
+        /*justify-content: start;*/
+        margin: 5px;
+        width: 250px;
+        height: 90px;
+        font-weight: 200px;
+
+
+
+
+
+    }
+
+    .flex-container div h1 {
+
+
+        width: 110px;
+        height: 50px;
+        margin: 1px;
+        margin-top: 50px;
+        font-size: 28px;
+        font-family: Michroma;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+
+
+
+
+    }
+
+    .flex-container div button {
+
+        width: 50px;
+        height: 24px;
+        margin: 1px;
+        /* margin-right: 160px; */
+        text-align: center;
+        font-size: 10px;
+        font-family: roboto;
+        color: #F7FC00;
+        background: black;
+        font: 0.5em roboto;
+        border-radius: 26.200000762939453px;
+
+
+    }
+
+    .image {
+        width: 200px;
+        height: 200px;
+        margin-top: 150px;
+        left: 10px;
+
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+
+        width: 700px;
+        height: 280px;
+        top: 127.4453125px;
+        left: -64px;
+
+
+
+    }
+
+    .flex-container div {
+
+        display: flex;
+        align-items: center;
+        /*justify-content: start;*/
+        margin: 5px;
+        width: 250px;
+        height: 90px;
+        font-weight: 200px;
+
+
+
+
+
+    }
+
+    .flex-container div h1 {
+
+
+        width: 110px;
+        height: 50px;
+        margin: 10px;
+        margin-top: 60px;
+        font-size: 38px;
+        font-family: Michroma;
+        font-weight: 400;
+        line-height: 33px;
+        letter-spacing: 0em;
+        text-align: left;
+
+
+
+
+    }
+
+    .flex-container div button {
+
+        width: 50px;
+        height: 24px;
+        margin: 1px;
+        /* margin-right: 160px; */
+        text-align: center;
+        font-size: 10px;
+        font-family: roboto;
+        color: #F7FC00;
+        background: black;
+        font: 0.5em roboto;
+        border-radius: 26.200000762939453px;
+
+
+    }
+
+    .image {
+        width: 200px;
+        height: 200px;
+        margin: 30px;
+        margin-top: 200px;
+        left: 10px;
+
+    }
+}
+
+@media (min-width: 1200px) and(max-width:1250) {
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+
+        width: 1200px;
+        height: 499px;
+        top: 127.4453125px;
+
+
+
+    }
+
+    .flex-container div {
+
+        display: flex;
+        align-items: center;
+       /* justify-content: start;*/
+        margin: 5px;
+        width: 250px;
+        height: 90px;
+        font-weight: 200px;
+
+
+
+
+
+    }
+
+    .flex-container div h1 {
+
+
+        width: 110px;
+        height: 50px;
+        margin: 10px;
+        margin-top: 60px;
+        font-size: 38px;
+        font-family: Michroma;
+        font-weight: 400;
+        line-height: 33px;
+        letter-spacing: 0em;
+        text-align: left;
+
+
+
+
+    }
+
+    .flex-container div button {
+
+        width: 50px;
+        height: 24px;
+        margin: 1px;
+        /* margin-right: 160px; */
+        text-align: center;
+        font-size: 10px;
+        font-family: roboto;
+        color: #F7FC00;
+        background: black;
+        font: 0.5em roboto;
+        border-radius: 26.200000762939453px;
+
+
+    }
+
+    .image {
+        width: 200px;
+        height: 200px;
+        margin: 30px;
+        margin-top: 200px;
+        left: 10px;
+
+    }
+
+}
+
+
